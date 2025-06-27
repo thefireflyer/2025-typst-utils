@@ -1,0 +1,9 @@
+version = "2.0"            
+watch_list = ["doc/**/*.typ"]
+hooks = ["build"]
+# ignore_list = ["docs/**/examples.md"]
+
+[[languages]]
+name = "Lean"
+identifiers = ["lean"]
+comment = { open = "--" }
