@@ -1,9 +1,16 @@
 #import "../../lib.typ": *
-#show: doc
+#show: doc.with(title: "Example")
 //============================================================================//
 
 #pagebreak()
 Header edge case.
+
+#lorem(30)
+#pagebreak()
+
+== Header Edge Case
+
+#lorem(30)
 
 //============================================================================//
 
@@ -49,14 +56,6 @@ Verified.
 
   Test the following expression $"`t"_1 in cal(T)_n$.
 
-  // $"`v" ::= & wide & "values:"
-  // \ & "`true" wide & "constant true"
-  // \ & "`false" wide & "constant false"
-  // \ & "`nv" wide & "numeric value"
-  // \
-  // \ "`nv" ::= & wide & "numeric values:"
-  // \ & "`0" wide & "zero value"
-  // \ & "`succ nv" wide & "successor value"$
   Consider the following grammar:
   #bnf(
     Prod($"`v"$, {
@@ -128,5 +127,17 @@ gcc src/hello_world.c -o target/hello_world
 #code_exec(read("../target/hello_world_out0"))
 
 #lorem(30)
+
+= Header Cases
+
+#lorem(900)
+
+=== Another Example
+
+#lorem(35)
+
+== Other Example
+
+#lorem(500)
 
 //============================================================================//
